@@ -1,0 +1,230 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-decoration: none;
+}
+
+#chat {
+    background-color: #a8a8a8;
+    width: 250px;
+    height: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 1em;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    display: flex;
+    transition: background-color .6s;
+
+}
+
+#chat .chat {
+    width: 190px;
+    height: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#chat .cx {
+    width: 55px;
+    height: 100%;
+    border-left: 1.5px solid #8f8f8f;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+#chat .cx img {
+    height: 25px;
+}
+
+#chat.invert {
+    color: #fff;
+    background-color: #000;    
+}
+
+.m {
+    margin-top: 2em;
+}
+
+#back {
+    background-image: url(../imagens/sac.jpeg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+.opac {
+    background-color: #000;
+    opacity: 0.8;
+    height: 100vh;
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    padding-top: 30.5px; 
+}
+
+.logo {
+    display: flex;
+}
+
+.logoimg {
+    margin-right: 78px;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+}
+
+.tel img {
+    height: 44.8px;
+    transform: rotate(-45deg)
+}
+
+.tel span {
+    margin-left: 12px;
+}
+
+#menu a {
+ color: #fff;
+}
+
+#menu nav {
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+
+#menu nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#menu nav li {
+    list-style: none;
+}
+
+main {
+    height: 84vh;
+}
+
+
+#sac {
+    display: flex;
+    width: 70%;
+    margin: auto;
+    justify-content: space-between;
+    height: 70vh;
+}
+
+.contact {
+    margin-top: 5em;
+}
+
+.telefone {
+    display: flex;
+    align-items: center;
+}
+
+.telefone img {
+    height: 44.8px;
+    transform: rotate(-45deg)
+}
+
+.telefone span {
+    margin-left: 12px;
+}
+
+.face {
+    display: flex;
+    align-items: center;
+}
+
+.face img {
+    height: 44.8px;
+}
+
+.face span {
+    margin-left: 12px;
+}
+
+.zip {
+    display: flex;
+    align-items: center;
+}
+
+.zip img {
+    height: 44.8px;
+}
+
+.zip span {
+    margin-left: 12px;
+}
+
+#sac span {
+    left: 4em;
+    font-weight: 300;
+}
+
+#sac .endereco{
+    position: absolute;
+    bottom: 1.3em;
+}
+
+
+.prc {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5em;
+    width: 70%;
+}
+
+.prc input {
+    border-radius: 10px;
+    padding-left: 5px;
+    margin-bottom: 1em;
+}
+
+.prc textarea {
+    border-radius: 20px;
+    resize: none;
+    width: 100%;
+    height: 155.5px;
+    padding-left: 5px; 
+}
+
+#btn {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#btn .btn {
+    margin-top: 3em;
+    color: #fff;
+    width: 126px;
+    height: 28px;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+
+.img2 {
+    display: flex;
+    margin-right: 8em;
+}

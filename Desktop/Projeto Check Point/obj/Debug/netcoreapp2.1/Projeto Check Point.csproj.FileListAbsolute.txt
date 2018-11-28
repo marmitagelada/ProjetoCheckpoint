@@ -1,0 +1,28 @@
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.csprojAssemblyReference.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.csproj.CoreCompileInputs.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorAssemblyInfo.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorAssemblyInfo.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.AssemblyInfoInputs.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.AssemblyInfo.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.TagHelpers.input.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.TagHelpers.output.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorCoreGenerate.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.dll
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.pdb
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.deps.json
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.runtimeconfig.json
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.runtimeconfig.dev.json
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.dll
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.pdb
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.Views.dll
+C:\Users\35711103822\Desktop\Projeto Check Point\bin\Debug\netcoreapp2.1\Projeto Check Point.Views.pdb
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\index.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\sobre.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageDeslogado.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorTargetAssemblyInfo.cache
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorTargetAssemblyInfo.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.Views.pdb
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.csproj.CopyComplete
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Home\Faq.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\Faq.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\SAC.g.cshtml.cs
