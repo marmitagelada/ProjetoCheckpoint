@@ -1,92 +1,68 @@
-@{ Layout = "MasterPageDeslogado"; }
+@{ Layout = "MasterPageDeslogado"; } 
+
+@section styles {
+    <link rel="stylesheet" href="/css/faq.css"> 
+}
 
 <body>
-    <div id="back">
-        <div class="opac">
-            <header>
-                <div id="menu">
-                    <div class="logo">
-                        <a href="index.html">
-                            <img src="imagens/icones/logo.png" alt="Logo" class="logoimg">
-                        </a>
-                        <div class="tel">
-                            <img src="imagens/icones/telefone.png" alt="Telefone">
-                            <span>5555-5555</span>
+    <main>
+        <section id="faq">
+            <h1>Perguntas Frequentes</h1>
+            <div class="quest">
+                <ul>
+                    <li>
+                        Pergunta 1
+                        <div>
+                            <span>Resposta 1</span>
                         </div>
-                    </div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="sobre.html">Sobre Nós</a>
-                            </li>
-                            <li>
-                                FAQ
-                            </li>
-                            <li>
-                                <a href="sac.html">SAC</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </header>
-            <main>
-                <section id="faq">
-                    <h1>Perguntas Frequentes</h1>
-                    <div class="quest">
-                        <ul>
-                            <li>
-                                Pergunta 1
-                                <div>
-                                    <span>Resposta 1</span>
-                                </div>
-                            </li>
-                            <li>
-                                Pergunta 2
-                                <div>
-                                    <span>Resposta 2</span>
-                                </div>
-                            </li>
-                            <li>
-                                Pergunta 3
-                                <div>
-                                    <span>Resposta 3</span>
-                                </div>
-                            </li>
-                            <li>
-                                Pergunta 4
-                                <div>
-                                    <span>Resposta 4</span>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                    <span class="endereco">Alameda Barão de Limeira, 539</span>
-                </section>
-            </main>
-            <footer>
-                <div id="plus">
-                    <div class="contain">
-                        <h2>Não foi útil?</h2>
-                        <br>
-                        <br>
-                        <textarea></textarea>
-                        <div id="btn">
-                            <div class="btn">Enviar</div>
+                    </li>
+                    <li>
+                        Pergunta 2
+                        <div>
+                            <span>Resposta 2</span>
                         </div>
-                    </div>
-                    <div class="img2">
-                        <img src="./imagens/icones/tel.png" alt="">
-                    </div>
+                    </li>
+                    <li>
+                        Pergunta 3
+                        <div>
+                            <span>Resposta 3</span>
+                        </div>
+                    </li>
+                    <li>
+                        Pergunta 4
+                        <div>
+                            <span>Resposta 4</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <span class="endereco">Alameda Barão de Limeira, 539</span>
+        </section>
+    </main>
+    <footer>
+        <div id="plus">
+            <div class="contain">
+                <h2>Não foi útil?</h2>
+                <br>
+                <br>
+                <textarea></textarea>
+                <div id="btn">
+                    <div class="btn">Enviar</div>
                 </div>
-            </footer>
+            </div>
+            <div class="img2">
+                <img src="/imagens/icones/tel.png" alt="">
+            </div>
         </div>
+    </footer>
+    </div>
     </div>
     <div id="chat">
         <div class="chat">
             <p>Fale Conosco</p>
         </div>
         <div class="cx">
-            <img src="imagens/icones/chat.png" alt="Chat">
+            <img src="/imagens/icones/chat.png" alt="Chat">
         </div>
     </div>
 </body>

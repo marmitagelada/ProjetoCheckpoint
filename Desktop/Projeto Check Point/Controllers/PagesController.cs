@@ -25,10 +25,5 @@ namespace Projeto_Check_Point.Controllers
         {
             return View();
         }
-        [HttpGet]
-        public IActionResult Login()
-        {
-            return View();
-        }
     }
 }

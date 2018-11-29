@@ -32,7 +32,7 @@ namespace Projeto_Check_Point {
             app.UseMvc (
                 rota => rota.MapRoute (
                     name: "defaults",
-                    template: "{controller=Pages}/{action=index}")
+                    template: "{controller=Pages}/{action=Index}")
             );
         }
     }

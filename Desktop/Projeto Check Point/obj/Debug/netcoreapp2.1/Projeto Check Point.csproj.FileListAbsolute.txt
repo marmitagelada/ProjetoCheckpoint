@@ -23,6 +23,6 @@ C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.RazorTargetAssemblyInfo.cs
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.Views.pdb
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Projeto Check Point.csproj.CopyComplete
-C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Home\Faq.g.cshtml.cs
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\Faq.g.cshtml.cs
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\SAC.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Login.g.cshtml.cs
