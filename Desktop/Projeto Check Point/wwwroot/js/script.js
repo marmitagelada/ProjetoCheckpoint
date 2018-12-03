@@ -9,3 +9,24 @@ window.onscroll = () => {
         document.querySelector("#chat img").src = "/imagens/icones/chat.png";
     }
 };
+
+window.addEventListener('load', () => {
+    document
+        .querySelectorAll(".inputLabel")
+        .forEach((e) => {
+            //Pega o input
+            let input = e.querySelector("input");
+            let label = e.querySelector("label");
+
+
+            input.addEventListener('blur', () => {
+                if (input.value.trim().length != 0) {
+                    label.classList.add("tem-conteudo");
+                }
+                else {
+                    label.classList.remove("tem-conteudo");
+                }
+            })
+
+        });
+});

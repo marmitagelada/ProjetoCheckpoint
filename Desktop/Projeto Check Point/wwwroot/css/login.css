@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+    font-size: 20px;
+    text-decoration: none;
+    outline: none;    
+}
+
+#menu {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1366px;
+    margin: auto;
+    padding-top: 30.5px; 
+}
+
+.logo {
+    display: flex;
+}
+
+.logoimg {
+    margin-right: 78px;
+}
+
+.tel {
+    display: flex;
+    align-items: center;
+}
+
+.tel img {
+    height: 44.8px;
+    transform: rotate(-45deg)
+}
+
+.tel span {
+    margin-left: 12px;
+    color: #fff;
+}
+
+#menu a {
+ color: #fff;
+}
+
+#menu nav {
+    align-items: center;
+    display: flex;
+    width: 50%;
+}
+
+#menu nav ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+#menu nav li {
+    list-style: none;
+}
+
+#back {
+    background-image: url(/imagens/login.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    color: #fff;
+}
+
+.opac {
+    background-color: #000;
+    opacity: 0.85;
+    height: 100vh;
+}
+
+#logar {
+    height: 45%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+    box-shadow: 0 15px 25px rgba(0,0,0,.5);
+    border: 0.5px solid #fff;
+    border-radius: 0.6em;
+}
+
+#logar h1 {
+    margin-top: 1em;
+    font-size: 1.5em;
+}
+
+.log_form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.log_form label{
+    margin: 0;
+}
+
+.log_form input {
+    width: 100%;
+    margin-top: 1em;
+    background: transparent;
+    color: white;
+    border: 0;
+    border-bottom: 1px solid #fff;
+}
+
+.log_form input[type="submit"] {
+    margin: auto;
+    margin-top: 1.5em;
+    width: 30%;
+    cursor: pointer;
+    border: 1px solid #fff;
+    border-radius: 0.3em;
+}
+
+.log_form hr {
+    margin-top: 1em;
+    width: 90%
+}
+
+.log_form a {
+    margin: auto;
+    margin-top: 1.5em;
+    font-size: 0.7em;
+    color: #fff;
+}
+
+.inputLabel {
+    width: 90%;
+}
+
+.inputLabel > * {
+    display: block;
+    padding: 0;
+}
+
+.inputLabel input {
+    width: 100%;
+    z-index: 1;
+}
+
+.inputLabel label{
+    color: white;
+    transform: translateY(-100%);
+    z-index: -1;
+    position: relative;
+
+    transition: all .2s;;
+}
+
+.inputLabel label.tem-conteudo
+{
+    border-bottom: 2px green solid;
+    color: transparent;
+    transform: rotate(180deg);
+    z-index: 2;
+}
+
+.inputLabel input:focus ~ label{
+    color: blue;
+    transform: translateY(-200%) scale(0.60);
+    transform-origin: left;
+    border-bottom: none
+}
+
+.btn {
+    width: 100%;
+    display: flex;
+}

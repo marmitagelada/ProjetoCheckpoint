@@ -1,0 +1,27 @@
+@{ Layout = "MasterPageDeslogado"; } 
+
+@section styles {
+    <link rel="stylesheet" href="/css/cadastro.css"> 
+}
+
+<html>
+
+<body>
+    <main>
+        <div id="cadastrar">
+            <h1>Cadastro de Usuários</h1>
+            <form action="/Usuario/Cadastro" method="POST" class="cad_form">
+                <input type="text" name="nome" placeholder="Nome">
+                <input type="email" name="email" placeholder="E-mail">
+                <input type="password" name="senha" placeholder="Senha">
+                <input type="submit" value="Enviar">
+            </form>
+
+            @ViewBag.Mensagem
+        </div>
+    </main>
+    </div>
+    </div>
+</body>
+
+</html>

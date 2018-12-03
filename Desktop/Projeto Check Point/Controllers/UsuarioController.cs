@@ -8,9 +8,9 @@ namespace Projeto_Check_Point.Controllers
 {
     public class UsuarioController : Controller
     {
-        public IUsuario UsuarioRepositorioS { get; set; }
+        public IUsuario UsuarioRepositorio { get; set; }
         public UsuarioController () {
-            UsuarioRepositorioS = new UsuarioRepositorioS ();
+            UsuarioRepositorio = new UsuarioRepositorioCSV ();
         }
         [HttpGet]
         public ActionResult Cadastro () => View (); 
@@ -18,13 +18,11 @@ namespace Projeto_Check_Point.Controllers
         [HttpPost]
         public ActionResult Cadastro (IFormCollection form) {
 
-            UsuarioModel usuarioModel = new UsuarioModel (id: int.Parse(form["ID"]), nome: form["nome"], email: form["email"], senha: form["senha"], admin: bool.Parse(form["admin"]));
+            UsuarioModel usuarioModel = new UsuarioModel( nome: form["nome"], email: form["email"], senha: form["senha"]);
 
-            UsuarioRepositorioS.Cadastrar (usuarioModel);
+            UsuarioRepositorio.Cadastrar (usuarioModel);
 
-            ViewBag.Mensagem = "Usuário Cadastrado";
-
-            return View ();
+            return RedirectToAction("Index", "Pages");
         }
 
         [HttpGet]

@@ -12,12 +12,16 @@ namespace Projeto_Check_Point.Models
             this.Email = email;
             this.Senha = senha;
         }
-        public UsuarioModel (int id, string nome, string email, string senha, bool admin) {
+        public UsuarioModel (string nome, string email, string senha) {
+            this.Nome = nome;
+            this.Email = email;
+            this.Senha = senha;
+        }
+        public UsuarioModel (int id, string nome, string email, string senha) {
             this.ID = id;
             this.Nome = nome;
             this.Email = email;
             this.Senha = senha;
-            this.Admin = admin;
         }
     }
 }
