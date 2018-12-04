@@ -14,8 +14,17 @@ namespace Projeto_Check_Point.Repositorios {
                 usuarioModel.ID = 1;
             }
 
+            bool admin;
+
+            if (usuarioModel.Admin == true)
+            {
+                admin = true;
+            } else {
+                admin = false;
+            }
+
             using (StreamWriter sw = new StreamWriter ("usuarios.csv", true)) {
-                sw.WriteLine ($"{usuarioModel.ID};{usuarioModel.Nome};{usuarioModel.Email};{usuarioModel.Senha};comum");
+                sw.WriteLine ($"{usuarioModel.ID};{usuarioModel.Nome};{usuarioModel.Email};{usuarioModel.Senha};{usuarioModel.Admin}");
             }
 
             return usuarioModel;

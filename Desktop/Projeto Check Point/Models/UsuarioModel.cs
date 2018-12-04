@@ -12,7 +12,7 @@ namespace Projeto_Check_Point.Models
             this.Email = email;
             this.Senha = senha;
         }
-        public UsuarioModel (string nome, string email, string senha) {
+        public UsuarioModel (string nome, string email, string senha, bool admin) {
             this.Nome = nome;
             this.Email = email;
             this.Senha = senha;
@@ -22,6 +22,14 @@ namespace Projeto_Check_Point.Models
             this.Nome = nome;
             this.Email = email;
             this.Senha = senha;
+        }
+
+        public UsuarioModel (int id, string nome, string email, string senha, bool admin) {
+            this.ID = id;
+            this.Nome = nome;
+            this.Email = email;
+            this.Senha = senha;
+            this.Admin = admin;
         }
     }
 }
