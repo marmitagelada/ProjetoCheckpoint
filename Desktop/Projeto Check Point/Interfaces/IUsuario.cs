@@ -8,10 +8,6 @@ namespace Projeto_Check_Point.Interfaces
     {
         UsuarioModel Cadastrar(UsuarioModel usuario);
 
-        // List<UsuarioModel> Listar();
-
         UsuarioModel BuscarPorEmailESenha(string email, string senha);
-
-        // UsuarioModel BuscarPorID(int id);
     }
 }

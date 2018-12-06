@@ -1,5 +1,8 @@
+using System;
+
 namespace Projeto_Check_Point.Models
 {
+    [Serializable]
     public class UsuarioModel
     {
         public int ID { get; set; }

@@ -73,5 +73,23 @@ namespace Projeto_Check_Point.Repositorios {
             }
             return lsUsuarios;
         }
+        public UsuarioModel BuscarPorID (int id) {
+            string[] linhas = System.IO.File.ReadAllLines ("usuarios.csv");
+
+            for (int i = 0; i < linhas.Length; i++) {
+                if (string.IsNullOrEmpty (linhas[i])) {
+                    continue;
+                }
+
+                string[] dados = linhas[i].Split (';');
+
+                if (dados[0] == id.ToString ()) {
+                    UsuarioModel usuario = new UsuarioModel (id: int.Parse (dados[0]), nome: dados[1], email: dados[2], senha: dados[3]);
+
+                    return usuario;
+                }
+            }
+            return null;
+        }
     }
 }

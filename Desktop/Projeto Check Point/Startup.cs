@@ -27,6 +27,8 @@ namespace Projeto_Check_Point {
                 app.UseDeveloperExceptionPage ();
             }
 
+            app.UseSession();
+
             app.UseStaticFiles ();
 
             app.UseMvc (
