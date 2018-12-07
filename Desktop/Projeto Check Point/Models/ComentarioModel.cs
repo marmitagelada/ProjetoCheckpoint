@@ -24,5 +24,12 @@ namespace Projeto_Check_Point.Models
             this.DataComentario = dataComentario;
             this.idUsuario = idusuario;
         }
+
+        public ComentarioModel (string comentario, DateTime dataComentario, int idusuario, string status) {
+            this.Comentario = comentario;
+            this.DataComentario = dataComentario;
+            this.idUsuario = idusuario;
+            this.Status = status;
+        }
     }
 }

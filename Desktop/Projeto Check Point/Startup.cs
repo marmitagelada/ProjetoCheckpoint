@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.DependencyInjection.Extensions;
 
 namespace Projeto_Check_Point {
     public class Startup {
@@ -15,6 +16,8 @@ namespace Projeto_Check_Point {
             services.AddMvc ();
 
             services.AddDistributedMemoryCache ();
+
+            services.TryAddSingleton<IHttpContextAccessor, HttpContextAccessor>();
 
             services.AddSession (
                 options => options.IdleTimeout = TimeSpan.FromMinutes (30)

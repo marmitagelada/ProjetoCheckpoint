@@ -37,13 +37,18 @@ namespace Projeto_Check_Point.Controllers {
             // UsuarioRepositorioCSV usuarioRep = new UsuarioRepositorioCSV ();
             UsuarioModel usuarioModel = UsuarioRepositorio.BuscarPorEmailESenha (usuario.Email, usuario.Senha);
             if (usuarioModel != null) {
-                ViewBag.Mensagem = "Login realizado com sucesso!";
                 HttpContext.Session.SetString("IDusuario", usuarioModel.ID.ToString());
-                return RedirectToAction ("Index", "Pages");
-            } else {
-                ViewBag.Mensagem = "Acesso negado!";
+                HttpContext.Session.SetString("tipoUsuario", usuarioModel.Admin.ToString());
+
+                return RedirectToAction ("Index" , "Pages");
             }
             return View ();
+        }
+
+        [HttpGet]
+        public IActionResult Sair () {
+            HttpContext.Session.Remove("IDusuario");
+            return RedirectToAction ("Index" , "Pages");
         }
     }
 }

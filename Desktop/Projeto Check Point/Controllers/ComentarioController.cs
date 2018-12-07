@@ -28,13 +28,18 @@ namespace Projeto_Check_Point.Controllers
 
             UsuarioModel usuarioModel = usuarioRep.BuscarPorID(id);
 
-            ComentarioModel comentarioModel = new ComentarioModel (idusuario: id,comentario: form["mensagem"], dataComentario: DateTime.Now);
+            ComentarioModel comentarioModel = new ComentarioModel (idusuario: id,comentario: form["mensagem"], dataComentario: DateTime.Now, status: "em espera");
 
             ComentarioRepositorioCSV rep = new ComentarioRepositorioCSV();
 
             rep.Cadastrar (comentarioModel);
 
             return RedirectToAction ("Index","Pages");
+        }
+
+        [HttpGet]
+        public IActionResult Gerenciar () {
+            return View();
         }
     }
 }

@@ -65,7 +65,8 @@ namespace Projeto_Check_Point.Repositorios {
                     id: int.Parse (dadosDaLinha[0]),
                     nome: dadosDaLinha[1],
                     email: dadosDaLinha[2],
-                    senha: dadosDaLinha[3]
+                    senha: dadosDaLinha[3],
+                    admin: bool.Parse(dadosDaLinha[4])
                 );
 
                 //Adicionando o usuário na lista

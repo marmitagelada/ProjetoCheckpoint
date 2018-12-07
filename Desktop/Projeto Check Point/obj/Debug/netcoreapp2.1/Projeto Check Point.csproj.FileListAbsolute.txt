@@ -27,3 +27,6 @@ C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\V
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Pages\SAC.g.cshtml.cs
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Login.g.cshtml.cs
 C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Usuario\Cadastro.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageLogadoComum.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Comentario\Gerenciar.g.cshtml.cs
+C:\Users\35711103822\Desktop\Projeto Check Point\obj\Debug\netcoreapp2.1\Razor\Views\Shared\MasterPageLogadoAdmin.g.cshtml.cs
