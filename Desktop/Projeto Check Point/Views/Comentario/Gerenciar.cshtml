@@ -1,2 +1,35 @@
 @{ Layout = "MasterPageLogadoAdmin"; }
-<p>Dale</p>
+@using Projeto_Check_Point.Models;
+
+@section styles {
+    <link rel="stylesheet" href="/css/admin.css"> 
+    
+}
+
+<table>
+    <tbody>
+        @foreach (ComentarioModel item in ViewData["Comentarios"] as List<ComentarioModel>)
+        {
+            <tr>
+                <td>
+                    @item.NomeUsuario
+                </td>
+                <td>
+                    @item.Comentario
+                </td>
+                <td>
+                    @item.DataComentario
+                </td>
+                <td>
+                    @if(item.Status == "em espera" ){
+                        <form action="/Comentario/AprovarComentario" method="POST">
+                        <input type="hidden" value="@item.IDComentario">
+                        <button type="submit" name="escolha" value="aprovado">Aprovar</button>
+                        </form>
+                    } else {
+                    }
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

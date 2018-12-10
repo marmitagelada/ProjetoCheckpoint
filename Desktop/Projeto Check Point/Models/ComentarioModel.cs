@@ -8,6 +8,7 @@ namespace Projeto_Check_Point.Models
         public string Comentario { get; set; }
         public DateTime DataComentario  { get; set; }
         public string Status { get; set; }
+        public string NomeUsuario { get; set; }
 
         public int idUsuario { get; set; }
 
@@ -25,11 +26,12 @@ namespace Projeto_Check_Point.Models
             this.idUsuario = idusuario;
         }
 
-        public ComentarioModel (string comentario, DateTime dataComentario, int idusuario, string status) {
+        public ComentarioModel (string comentario, DateTime dataComentario, int idusuario, string nomeUsuario, string status) {
             this.Comentario = comentario;
             this.DataComentario = dataComentario;
             this.idUsuario = idusuario;
             this.Status = status;
+            this.NomeUsuario = nomeUsuario;
         }
     }
 }

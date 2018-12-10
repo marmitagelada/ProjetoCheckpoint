@@ -56,7 +56,7 @@ namespace AspNetCore
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(115, 1826, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d7e46b62aa0b49bd8ec0f3ad66269685", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d9759d3427f74b3f861c20f76594a08f", async() => {
                 BeginContext(121, 1813, true);
                 WriteLiteral(@"
     <main>

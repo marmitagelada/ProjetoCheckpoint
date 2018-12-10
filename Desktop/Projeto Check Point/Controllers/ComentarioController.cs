@@ -24,11 +24,12 @@ namespace Projeto_Check_Point.Controllers
             {
                 return RedirectToAction("Login","Usuario");
             }
+
             int id = int.Parse(HttpContext.Session.GetString("IDusuario"));
 
             UsuarioModel usuarioModel = usuarioRep.BuscarPorID(id);
 
-            ComentarioModel comentarioModel = new ComentarioModel (idusuario: id,comentario: form["mensagem"], dataComentario: DateTime.Now, status: "em espera");
+            ComentarioModel comentarioModel = new ComentarioModel (idusuario: id, nomeUsuario: usuarioModel.Nome,comentario: form["mensagem"], dataComentario: DateTime.Now, status: "em espera");
 
             ComentarioRepositorioCSV rep = new ComentarioRepositorioCSV();
 
@@ -39,7 +40,18 @@ namespace Projeto_Check_Point.Controllers
 
         [HttpGet]
         public IActionResult Gerenciar () {
+            ViewData["Comentarios"] = ComentarioRepositorio.Listar ();
             return View();
+        }
+
+        [HttpPost]
+        public ActionResult AprovarComentario (int id) {
+            // ComentarioModel comentario = ComentarioRepositorio.BuscarPorID(id);
+
+            ComentarioRepositorio.AprovarComentario (id);
+
+            TempData["Mensagem"] = "Comentário Aprovado";
+            return RedirectToAction ("Gerenciar" , "Comentario");
         }
     }
 }
