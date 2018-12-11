@@ -10,6 +10,7 @@
 10;3;Matheus;alo;11/12/2018 14:17:00;aprovado
 11;3;Matheus;teste;11/12/2018 14:19:31;recusado
 12;3;Matheus;teste2;11/12/2018 14:22:31;recusado
-13;3;Matheus;a;11/12/2018 15:44:06;em espera
-14;3;Matheus;b;11/12/2018 15:44:10;em espera
-15;3;Matheus;c;11/12/2018 15:44:15;em espera
+13;3;Matheus;a;11/12/2018 15:44:06;aprovado
+14;3;Matheus;b;11/12/2018 15:44:10;recusado
+15;3;Matheus;c;11/12/2018 15:44:15;aprovado
+16;3;Matheus;arigod;11/12/2018 17:00:39;em espera

@@ -5,32 +5,27 @@
     <link rel="stylesheet" href="/css/admin.css"> 
     
 }
-<div class="tabela">
-<table>
-    <tbody>
-        @foreach (ComentarioModel item in ViewData["Comentarios"] as List<ComentarioModel>)
-        {
-            @if(item.Status == "em espera" ){
-            <tr>
-                <td>
+
+<div class="conteiner">
+    @foreach (ComentarioModel item in ViewData["Comentarios"] as List<ComentarioModel>){
+        @if(item.Status=="em espera"){
+        <div class="conteiner_int">
+            <div class="header">
+                <div class="texto">
                     @item.NomeUsuario
-                </td>
-                <td class="itemtab">
-                    <div>
-                    @item.Comentario
-                    </div>
-                    <div>
-                    <a href="/Comentario/AprovarComentario?id=@item.IDComentario">Aprovar</a>
-                    <a href="/Comentario/RecusarComentario?id=@item.IDComentario">Recusar</a>
-                    </div>
-                </td>
-                <td>
-                    @item.DataComentario
-                    <hr>
-                </td>
-            </tr>
-            }
+                </div>
+                <div class="btns">
+                    <a class="aproved" href="/Comentario/AprovarComentario?id=@item.IDComentario">Aprovar</a>
+                    <a class="reproved" href="/Comentario/RecusarComentario?id=@item.IDComentario">Recusar</a>
+                </div>
+            </div>
+            <div class="main">
+                <p>@item.Comentario</p>
+            </div>
+            <div class="footer">
+                <span>@item.DataComentario</span>
+            </div>
+        </div>
         }
-    </tbody>
-</table>
+    }
 </div>

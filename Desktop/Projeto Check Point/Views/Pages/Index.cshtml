@@ -1,4 +1,5 @@
 @using Microsoft.AspNetCore.Http
+@using Projeto_Check_Point.Models;
 @inject IHttpContextAccessor HttpContextAccessor
 
 @{ 
@@ -55,27 +56,28 @@
     </footer>
     <div class="coment">
         <hr>
-        <table>
-        <tbody>
-        @using Projeto_Check_Point.Models;
-        @foreach (ComentarioModel item in ViewData["ComentariosAprovados"] as List<ComentarioModel>)
+        <div class="conteiner">
+        @if (ViewData["ComentariosAprovados"] != null)
         {
-            if (item.Status == "aprovado"){
-                <tr>
-                    <td>
-                        @item.NomeUsuario
-                    </td>
-                    <td>
-                        @item.Comentario
-                    </td>
-                    <td>
-                        @item.DataComentario
-                    </td>
-                </tr>
-            }
+        @foreach (ComentarioModel item in ViewData["ComentariosAprovados"] as List<ComentarioModel>){
+        @if(item.Status=="aprovado"){
+        <div class="conteiner_int">
+            <div class="header">
+                <div class="texto">
+                    @item.NomeUsuario
+                </div>
+            </div>
+            <div class="main">
+                <p>@item.Comentario</p>
+            </div>
+            <div class="footer">
+                <span>@item.DataComentario</span>
+            </div>
+        </div>
         }
-    </tbody>
-    </table>
+        }
+    }
+</div>
     <hr>
         <div class="formComment">
         <form id="comment" action="/Comentario/Cadastro" method="POST">
