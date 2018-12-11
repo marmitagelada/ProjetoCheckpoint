@@ -10,6 +10,7 @@ namespace Projeto_Check_Point.Controllers
         [HttpGet]
         public IActionResult Index()
         {
+            ComentarioRepositorioCSV ComentarioRepositorio = new ComentarioRepositorioCSV();
             string id = HttpContext.Session.GetString("IDusuario");
 
             if (id != null)
@@ -20,6 +21,8 @@ namespace Projeto_Check_Point.Controllers
                 UsuarioModel usuarioModel = rep.BuscarPorID(idINT);
 
             }
+
+            ViewData["ComentariosAprovados"] = ComentarioRepositorio.Listar ();
             return View();
         }
 

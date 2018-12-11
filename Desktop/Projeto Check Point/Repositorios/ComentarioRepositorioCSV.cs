@@ -85,5 +85,18 @@ namespace Projeto_Check_Point.Repositorios
             }
             File.WriteAllLines ("comentarios.csv", linhas);
         }
+        public void RecusarComentario (int ID) {
+            string[] linhas = File.ReadAllLines ("comentarios.csv");
+            for (int i = 0; i < linhas.Length; i++) {
+                string[] dadosDaLinha = linhas[i].Split (';');
+
+                if (ID.ToString () == dadosDaLinha[0]) {
+                    linhas[i] = ($"{dadosDaLinha[0]};{dadosDaLinha[1]};{dadosDaLinha[2]};{dadosDaLinha[3]};{dadosDaLinha[4]};recusado");
+                    break;
+                }
+            }
+
+            File.WriteAllLines ("comentarios.csv", linhas);
+        }
     }
 }

@@ -8,6 +8,7 @@ namespace Projeto_Check_Point.Interfaces
         ComentarioModel Cadastrar(ComentarioModel usuario);
         List<ComentarioModel> Listar();
         void AprovarComentario(int id);
+        void RecusarComentario(int id);
         ComentarioModel BuscarPorID(int id);
     }
 }

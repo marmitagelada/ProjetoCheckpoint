@@ -55,6 +55,28 @@
     </footer>
     <div class="coment">
         <hr>
+        <table>
+        <tbody>
+        @using Projeto_Check_Point.Models;
+        @foreach (ComentarioModel item in ViewData["ComentariosAprovados"] as List<ComentarioModel>)
+        {
+            if (item.Status == "aprovado"){
+                <tr>
+                    <td>
+                        @item.NomeUsuario
+                    </td>
+                    <td>
+                        @item.Comentario
+                    </td>
+                    <td>
+                        @item.DataComentario
+                    </td>
+                </tr>
+            }
+        }
+    </tbody>
+    </table>
+    <hr>
         <div class="formComment">
         <form id="comment" action="/Comentario/Cadastro" method="POST">
             <textarea placeholder="Deixe aqui sua opinião" name="mensagem"></textarea>

@@ -44,14 +44,21 @@ namespace Projeto_Check_Point.Controllers
             return View();
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult AprovarComentario (int id) {
-            // ComentarioModel comentario = ComentarioRepositorio.BuscarPorID(id);
-
             ComentarioRepositorio.AprovarComentario (id);
-
             TempData["Mensagem"] = "Comentário Aprovado";
             return RedirectToAction ("Gerenciar" , "Comentario");
+        }
+        [HttpGet]
+        public ActionResult RecusarComentario (int id) {
+            ComentarioRepositorio.RecusarComentario (id);
+            TempData["Mensagem"] = "Comentário Recusado";
+            return RedirectToAction ("Gerenciar" , "Comentario");
+        }
+        public ActionResult ListarComentariosAprovados () {
+            ViewData["ComentariosAprovados"] = ComentarioRepositorio.Listar ();
+            return View ();
         }
     }
 }

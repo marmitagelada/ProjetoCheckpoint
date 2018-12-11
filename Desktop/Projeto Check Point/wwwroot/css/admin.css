@@ -110,3 +110,25 @@
 #menu nav li {
     list-style: none;
 }
+
+.tabela table {
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 3em;
+}
+
+.tabela table tr {
+    width: 15em;
+}
+
+.tabela table td {
+    display: flex;
+    width: 100%;
+    align-items: center;
+}
+
+.itemtab {
+    display: flex;
+    justify-content: space-between;
+}
